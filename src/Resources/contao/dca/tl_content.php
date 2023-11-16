@@ -50,7 +50,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['variant'] = array
     'label'                   => &$GLOBALS['TL_LANG'][$strName]['variant'],
     'exclude'                 => true,
     'inputType'               => 'select',
-    'eval'                    => array('chosen' => true, 'alwaysSave' => true),
+    'eval'                    => array('chosen' => true, 'alwaysSave' => true, 'tl_class' => 'w50'),
     'options_callback'        => array('\\esit\\ctscore\\classes\\contao\\helper\\OptionHelper', 'getOptions'),
     'sql'                     => "varchar(255) NOT NULL default ''"
 );
